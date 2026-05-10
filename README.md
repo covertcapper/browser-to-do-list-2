@@ -5,11 +5,18 @@ A browser to-do list that I created for JavaScript practice.
 ## Learning Notes
 
 <details>
-    <summary>Notes on CSS</summary>
-     - I wanted to add a gradient to the to-do list border, and I was able to do so with this trick:
-   
-    background:
-    linear-gradient(#34af84, #34af84) padding-box,
-    linear-gradient(to top, #d7efd9 0%, #f1fbf0 100%) border-box;
+    <summary>Notes: 10-05-2026</summary>
 
+- I wanted to add a gradient to the to-do list border, and I was able to do so with this trick:
+
+  ```
+   background:
+   linear-gradient(#34af84, #34af84) padding-box,
+   linear-gradient(to top, #d7efd9 0%, #f1fbf0 100%) border-box;
+
+  ```
+
+- I learned how to size and image properly over a button, I didn't want to use a website like "font awesome" for the icon.
+
+- Setting it up so that the text didn't move down to the next line too soon proved to be a slight issue. I struggled with setting up the `flex` property, but it turned out that using `width` with percentages was causing the issue.
 </details>
