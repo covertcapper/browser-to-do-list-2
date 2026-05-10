@@ -12,8 +12,16 @@
     <title>Browser To-Do List 2</title>
   </head>
   <body>
-    <h1>T-Do List</h1>
-
-    <script src="script.js"></script>
+    <div class="app-body">
+      <h1>To-Do List</h1>
+      <form class="task-input-area">
+        <input type="text" class="task-input-field" placeholder="New Task..." />
+        <button type="button" class="add-tsk-btn">Add task</button>
+      </form>
+      <div class="list-items-body">
+        <ul class="to-do-items"></ul>
+      </div>
+    </div>
   </body>
+  <script src="script.js"></script>
 </html>

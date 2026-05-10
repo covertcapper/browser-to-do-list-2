@@ -1,3 +1,35 @@
+:root {
+  --mainFont: sans-serif;
+  --mainFontColor: white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: linear-gradient(to top, #cce8cf 0%, #e8f4e7 100%);
+}
+
+.app-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border: 20px solid transparent;
+  background:
+    linear-gradient(#34af84, #34af84) padding-box,
+    linear-gradient(to top, #d7efd9 0%, #f1fbf0 100%) border-box;
+  border-radius: 20px;
+  filter: drop-shadow(0px 10px 15px rgb(142, 186, 166, 0.9));
+}
+
 h1 {
-  color: red;
+  font-family: var(--mainFont);
+  color: var(--mainFontColor);
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
 }

@@ -157,3 +157,6 @@ build/
 
 # logs
 *.log
+
+# VS Code
+.vscode/
