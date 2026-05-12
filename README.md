@@ -20,3 +20,11 @@ A browser to-do list that I created for JavaScript practice.
 
 - Setting it up so that the text didn't move down to the next line too soon proved to be a slight issue. I struggled with setting up the `flex` property, but it turned out that using `width` with percentages was causing the issue.
 </details>
+
+<details>
+    <summary>Notes: 12-05-2026</summary>
+
+- Tidied up the CSS for the task fields. My original code was unorganized, but I was able to do a cleaner job of it the second time having a better understanding of the process.
+
+- Working on creating a more interesting button using am input and a label since checkboxes aren't "style friendly" in HTML.
+</details>
