@@ -109,46 +109,17 @@ h1 {
   line-height: 1.3rem;
 }
 
-.to-do-items li input {
-  margin: 3px 30px 3px 15px;
-}
-
-.toggle {
-  opacity: 0;
-  position: relative;
-}
-
-.toggle + label {
-  position: absolute;
-  cursor: pointer;
-}
-
-.toggle + label::before {
-  content: '';
-  background-color: #34af84;
-  position: absolute;
-  top: -0.4rem;
-  left: 0.5rem;
-  width: 2rem;
-  height: 2rem;
-  border-radius: 2rem;
-}
-
-.toggle + label::after {
-  content: '';
-  opacity: 0;
-  background-color: #af349a;
-  position: absolute;
-  top: -0.2rem;
-  left: 0.75rem;
-  width: 1.5rem;
-  height: 1.5rem;
-  border-radius: 2rem;
-  transition: opacity 0.2s;
-}
-
-.toggle:checked + label::after {
-  opacity: 100;
+.to-do-items li .checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 20px;
+  width: 20px;
+  height: 20px;
+  margin: 0 20px;
+  color: black;
+  font-size: 1.2rem;
 }
 
 .to-do-items li span {

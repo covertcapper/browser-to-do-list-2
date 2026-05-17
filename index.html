@@ -15,7 +15,7 @@
     <div class="app-body">
       <h1>To-Do List</h1>
       <form class="task-input-area">
-        <input type="text" placeholder="New Task" />
+        <input type="text" placeholder="New Task" class="task-input" />
         <button type="button" class="add-tsk-btn">
           <img src="images/add-button.png" alt="Add Task" />
         </button>
@@ -24,14 +24,13 @@
         <ul class="to-do-items">
           <!-- Move to JS later -->
           <li>
-            <input type="checkbox" class="toggle" id="toggle" />
-            <label for="toggle">T</label>
+            <div class="checkbox">✓</div>
             <span>Clean Garage</span>
 
             <button><img src="images/garbage-can.png" alt="Delete" /></button>
           </li>
           <li>
-            <input type="checkbox" />
+            <div class="checkbox">✓</div>
             <span>Get Dog</span>
 
             <button><img src="images/garbage-can.png" alt="Delete" /></button>
