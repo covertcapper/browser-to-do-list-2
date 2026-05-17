@@ -26,5 +26,13 @@ A browser to-do list that I created for JavaScript practice.
 
 - Tidied up the CSS for the task fields. My original code was unorganized, but I was able to do a cleaner job of it the second time having a better understanding of the process.
 
-- Working on creating a more interesting button using am input and a label since checkboxes aren't "style friendly" in HTML.
+- Working on creating a more interesting button using an input and a label since checkboxes aren't "style friendly" in HTML.
+</details>
+
+<details>
+    <summary>Notes: 17-05-2026</summary>
+
+- Using the checkbox for this use-case was overkill since we're not actually submitting anything in this instance, so I scrapped trying to deal with it and just styled some CSS for checking items off.
+
+- Learning the JS step by step with online references and not just doing a tutorial step by step.
 </details>
