@@ -36,3 +36,10 @@ A browser to-do list that I created for JavaScript practice.
 
 - Learning the JS step by step with online references and not just doing a tutorial step by step.
 </details>
+
+<details>
+    <summary>Notes: 18-05-2026</summary>
+
+- Added a function to submit an item to the list by pressing "enter". Learned about `preventDefault();`
+
+</details>

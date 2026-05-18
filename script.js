@@ -6,6 +6,15 @@ const taskInput = document.querySelector('.task-input');
 const addTaskButton = document.querySelector('.add-tsk-btn');
 const toDoItems = document.querySelector('.to-do-items');
 
+// Enter click for new task submission
+
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Enter') {
+    addTaskButton.onclick();
+    e.preventDefault();
+  }
+});
+
 // Submit new task
 
 addTaskButton.onclick = function () {
