@@ -42,4 +42,6 @@ A browser to-do list that I created for JavaScript practice.
 
 - Added a function to submit an item to the list by pressing "enter". Learned about `preventDefault();`
 
+- Took some effort but I figured out how to toggle a checkmark within JS. Learned about `removeChild()`.
+
 </details>

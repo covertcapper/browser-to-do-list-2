@@ -26,8 +26,18 @@ addTaskButton.onclick = function () {
   // Checkbox
   const checkbox = document.createElement('div');
   checkbox.classList.add('checkbox');
-  const checkMark = document.createTextNode('✓');
-  checkbox.appendChild(checkMark);
+  checkbox.classList.add('hidden');
+
+  // Check tasks as completed
+  checkbox.addEventListener('click', function () {
+    if (!checkbox.hasChildNodes()) {
+      const checkMark = document.createTextNode('✓');
+      checkbox.appendChild(checkMark);
+    } else {
+      checkbox.removeChild(checkbox.firstChild);
+    }
+  });
+
   // Task text
   const newTask = document.createElement('span');
   const taskText = document.createTextNode(`${newTaskInput}`);
