@@ -80,6 +80,10 @@ h1 {
   transform: scale(1.05);
 }
 
+.task-input-area .add-tsk-btn img:hover:active {
+  filter: drop-shadow(0px 5px 5px rgba(38, 108, 76, 0.2));
+  transform: scale(0.9);
+}
 /* List items */
 
 .list-items-body {
@@ -155,4 +159,9 @@ h1 {
 .to-do-items li img:hover {
   filter: drop-shadow(0px 5px 5px rgba(38, 108, 76, 0.2));
   transform: scale(1.05);
+}
+
+.to-do-items li img:hover:active {
+  filter: drop-shadow(0px 5px 5px rgba(38, 108, 76, 0.2));
+  transform: scale(0.9);
 }

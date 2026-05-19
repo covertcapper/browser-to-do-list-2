@@ -18,38 +18,49 @@ document.addEventListener('keydown', function (e) {
 // Submit new task
 
 addTaskButton.onclick = function () {
-  const newTaskInput = taskInput.value;
+  if (taskInput && taskInput.value) {
+    const newTaskInput = taskInput.value;
 
-  // New li
-  const newLI = document.createElement('li');
-  toDoItems.appendChild(newLI);
-  // Checkbox
-  const checkbox = document.createElement('div');
-  checkbox.classList.add('checkbox');
-  checkbox.classList.add('hidden');
+    // New li
+    const newLI = document.createElement('li');
+    toDoItems.appendChild(newLI);
+    // Checkbox
+    const checkbox = document.createElement('div');
+    checkbox.classList.add('checkbox');
+    checkbox.classList.add('hidden');
 
-  // Check tasks as completed
-  checkbox.addEventListener('click', function () {
-    if (!checkbox.hasChildNodes()) {
-      const checkMark = document.createTextNode('✓');
-      checkbox.appendChild(checkMark);
-    } else {
-      checkbox.removeChild(checkbox.firstChild);
-    }
-  });
+    // Check tasks as completed
+    checkbox.addEventListener('click', function () {
+      if (!checkbox.hasChildNodes()) {
+        const checkMark = document.createTextNode('✓');
+        checkbox.appendChild(checkMark);
+        newTask.style.textDecoration = 'line-through';
+        newTask.style.textDecorationThickness = '.15rem';
+      } else {
+        checkbox.removeChild(checkbox.firstChild);
+        newTask.style.textDecoration = 'none';
+      }
+    });
 
-  // Task text
-  const newTask = document.createElement('span');
-  const taskText = document.createTextNode(`${newTaskInput}`);
-  newTask.appendChild(taskText);
-  // Delete button
-  const button = document.createElement('button');
-  const img = document.createElement('img');
-  img.src = 'images/garbage-can.png';
-  img.alt = 'Delete';
-  button.appendChild(img);
-  // Binding it all
-  newLI.append(checkbox, newTask, button);
+    // Task text
+    const newTask = document.createElement('span');
+    const taskText = document.createTextNode(`${newTaskInput}`);
+    newTask.appendChild(taskText);
+    // Delete button
+    const button = document.createElement('button');
+    const img = document.createElement('img');
+    img.src = 'images/garbage-can.png';
+    img.alt = 'Delete';
+    button.appendChild(img);
+    // Binding it all
+    newLI.append(checkbox, newTask, button);
 
-  taskInput.value = '';
+    taskInput.value = '';
+
+    // Delete element
+    button.onclick = function () {
+      newLI.remove();
+    };
+  } else {
+  }
 };

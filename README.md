@@ -45,3 +45,12 @@ A browser to-do list that I created for JavaScript practice.
 - Took some effort but I figured out how to toggle a checkmark within JS. Learned about `removeChild()`.
 
 </details>
+
+<details>
+    <summary>Notes: 18-05-2026</summary>
+
+- Made it so I can delete elements with the delete button.
+
+- Added an `if` `else` statement that won't allow an empty "new task" field to be submitted.
+
+</details>
