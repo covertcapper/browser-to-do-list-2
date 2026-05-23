@@ -60,4 +60,6 @@ A browser to-do list that I created for JavaScript practice.
 
 - Worked on setting up page so that if it's refreshed any list items won't disappear. I found this task to be quite difficult to understand, so I needed substantial help from Claude. I've taken note of this and will study the process separately so I can better understand it.
 
+- I also set it up so I can edit my inputted tasks with a double click, I also found this a bit difficult and will need to practice the steps more to learn them.
+
 </details>

@@ -15,6 +15,13 @@ function saveTasks() {
   localStorage.setItem('tasks', JSON.stringify(tasks));
 }
 
+// Sort list
+function renderAllTasks() {
+  toDoItems.innerHTML = '';
+  tasks.sort((a, b) => a.completed - b.completed);
+  tasks.forEach(renderTask);
+}
+
 // Builds and appends one list item from a taskObj
 
 function renderTask(taskObj) {
@@ -45,6 +52,7 @@ function renderTask(taskObj) {
       newTask.style.textDecoration = 'none';
     }
     taskObj.completed = !taskObj.completed;
+    renderAllTasks();
     saveTasks();
   });
 
