@@ -1,6 +1,8 @@
-# Browser To-Do List #2
+# Browser To-Do List
 
 A browser to-do list that I created for JavaScript practice.
+
+![Image of browser to-do list](images/2025-05-23_browser-to-do-list-screenshot.png)
 
 ## Learning Notes
 
@@ -61,5 +63,7 @@ A browser to-do list that I created for JavaScript practice.
 - Worked on setting up page so that if it's refreshed any list items won't disappear. I found this task to be quite difficult to understand, so I needed substantial help from Claude. I've taken note of this and will study the process separately so I can better understand it.
 
 - I also set it up so I can edit my inputted tasks with a double click, I also found this a bit difficult and will need to practice the steps more to learn them.
+
+- Learned how to sort an array. I set up my list items so that when they're checked off they get moved to the bottom of the list. I still need to better understand the `.sort()` method.
 
 </details>
