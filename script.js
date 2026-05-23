@@ -61,6 +61,32 @@ function renderTask(taskObj) {
     tasks.splice(tasks.indexOf(taskObj), 1);
     saveTasks();
   };
+  // Edit tasks
+  newTask.addEventListener('dblclick', function () {
+    const editInput = document.createElement('input');
+    editInput.value = taskObj.text;
+    newLI.replaceChild(editInput, newTask); // Swaps out the span
+    editInput.focus(); // Puts cursor into the field
+
+    function finishEdit() {
+      if (editInput.value.trim()) {
+        // checks that the field isn't blank
+        taskObj.text = editInput.value.trim();
+        newTask.firstChild.nodeValue = taskObj.text;
+        saveTasks();
+      }
+      newLI.replaceChild(newTask, editInput);
+    }
+
+    editInput.addEventListener('blur', finishEdit);
+
+    editInput.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter') {
+        e.stopPropagation();
+        finishEdit();
+      }
+    });
+  });
 }
 
 // Enter key for task submission
