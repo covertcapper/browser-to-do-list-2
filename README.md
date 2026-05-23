@@ -47,10 +47,17 @@ A browser to-do list that I created for JavaScript practice.
 </details>
 
 <details>
-    <summary>Notes: 18-05-2026</summary>
+    <summary>Notes: 19-05-2026</summary>
 
 - Made it so I can delete elements with the delete button.
 
 - Added an `if` `else` statement that won't allow an empty "new task" field to be submitted.
+
+</details>
+
+<details>
+    <summary>Notes: 23-05-2026</summary>
+
+- Worked on setting up page so that if it's refreshed any list items won't disappear. I found this task to be quite difficult to understand, so I needed substantial help from Claude. I've taken note of this and will study the process separately so I can better understand it.
 
 </details>
