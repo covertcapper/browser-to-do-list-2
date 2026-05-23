@@ -4,6 +4,19 @@ A browser to-do list that I created for JavaScript practice.
 
 ![Image of browser to-do list](images/2025-05-23_browser-to-do-list-screenshot.png)
 
+Link to project: https://covertcapper.github.io/browser-to-do-list-2/
+
+## How It's Made
+
+This in browser application was made using HTML, CSS, and JavaScript. The focus of this project was to learn how to plan out building something by breaking it down into smaller tasks and then figuring out how to accomplish all of those tasks by doing my own research.
+
+## Functionality
+
+- You can enter tasks into the "New Task" field.
+- Tasks can be deleted.
+- You can double click to edit a task.
+- Tasks will remain on page even after refresh.
+
 ## Learning Notes
 
 <details>
